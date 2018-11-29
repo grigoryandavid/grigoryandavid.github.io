@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+      <ion-header-bar class="bar-stable">
+        <div class="title">EE</div>
+      </ion-header-bar>
+      <ion-content ng-controller="eECtrl" padding="false" class="side-menu-left has-header ">
+        <div id="eE-markdown13" style="text-align:center;" class="show-list-numbers-and-dots" data-componentid="markdown13">
+          <p style="color:#3C19FE;">Electrical engineering is a professional engineering discipline that generally deals with the study and application of electricity, electronics, and electromagnetism. This field first became an identifiable occupation in the later half of the
+            19th century after commercialization of the electric telegraph, the telephone, and electric power distribution and use. Subsequently, broadcasting and recording media made electronics part of daily life. The invention of the transistor, and
+            later the integrated circuit, brought down the cost of electronics to the point they can be used in almost any household object.</p>
+
+          <p style="color:#3C19FE;">Electrical engineering has now subdivided into a wide range of subfields including electronics, digital computers, computer engineering, power engineering, telecommunications, control systems, robotics, radio-frequency engineering, signal processing,
+            instrumentation, and microelectronics. Many of these subdisciplines overlap with other engineering branches, spanning a huge number of specializations such as hardware engineering, power electronics, electromagnetics &amp; waves, microwave
+            engineering, nanotechnology, electrochemistry, renewable energies, mechatronics, electrical materials science, and much more. See glossary of electrical and electronics engineering.</p>
+
+          <p style="color:#3C19FE;">Electrical engineers typically hold a degree in electrical engineering or electronic engineering. Practicing engineers may have professional certification and be members of a professional body. Such bodies include the Institute of Electrical
+            and Electronics Engineers (IEEE) and the Institution of Engineering and Technology (IET) (formerly the IEE).</p>
+
+          <p style="color:#3C19FE;">Electrical engineers work in a very wide range of industries and the skills required are likewise variable. These range from basic circuit theory to the management skills required of a project manager. The tools and equipment that an individual
+            engineer may need are similarly variable, ranging from a simple voltmeter to a top end analyzer to sophisticated design and manufacturing software.</p>
+        </div>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+  </body>
+</html>
